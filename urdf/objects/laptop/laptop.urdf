@@ -1,0 +1,98 @@
+<?xml version="1.0"?>
+
+<robot name="laptop">
+  <link name="lap_down">
+
+    <inertial>
+      <origin xyz="0 0 0" />
+      <mass value="1" />
+      <inertia  ixx="1.0" ixy="0.0"  ixz="0.0"  iyy="1.0"  iyz="0.0"  izz="1.0" />
+    </inertial>
+
+    <visual>
+      <origin xyz="0 0 0"/>
+      <geometry>
+	<mesh filename="mesh/pad.obj" />
+      </geometry>
+      <material name="white">
+        <color rgba="1.0 1.0 1.0 1.0"/>
+      </material>
+    </visual>
+
+    <collision>
+      <origin xyz="0 0 0"/>
+      <geometry>
+        <mesh filename="mesh/pad.obj" />
+      </geometry>
+    </collision>
+
+  </link>
+
+  <joint name="lap_joint" type="continuous">
+    <parent link="lap_down"/>
+    <child link="lap_up"/>
+    <origin rpy="0 0 0" xyz="0 0 0" />
+    <axis xyz="1 0 0"/>
+  </joint>
+
+  <link name="lap_up">
+    <inertial>
+      <origin xyz="0 0 0" />
+      <mass value="1.0" />
+      <inertia  ixx="1.0" ixy="0.0"  ixz="0.0"  iyy="1.0"  iyz="0.0"  izz="1.0" />
+    </inertial>
+    <visual>
+      <origin xyz="0 0 0"/>
+      <geometry>
+	<mesh filename="mesh/monitor.obj" />
+      </geometry>
+      <material name="white">
+	<color rgba="1.0 1.0 1.0 1.0"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0"/>
+      <geometry>
+	<mesh filename="mesh/monitor.obj" />
+      </geometry>
+    </collision>
+  </link>
+
+  <joint name="action_point_joint" type="fixed">
+    <parent link="lap_up"/>
+    <child link="action_point"/>
+    <origin rpy="0.0 0.0 0.0" xyz="0.0 0.17 0.01" />
+  </joint>
+
+
+  <link name="action_point">
+  </link>
+
+  <joint name="penalty_point_joint" type="fixed">
+    <parent link="lap_up"/>
+    <child link="penalty_point"/>
+    <origin rpy="0.0 0.0 0.0" xyz="0.0 0.16 -0.02" />
+  </joint>
+
+
+  <link name="penalty_point">
+ <!--   <collision>
+      <origin xyz="0 0 0"/>
+      <geometry>
+	<sphere radius="0.03" />
+      </geometry>
+    </collision>
+    <visual>
+      <origin xyz="0 0 0"/>
+      <geometry>
+	<sphere radius="0.03" />
+      </geometry>
+      <material name="whe">
+	<color rgba="1.0 1.0 1.0 0.0"/>
+      </material>
+    </visual>-->
+
+  </link>
+
+
+</robot>
