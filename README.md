@@ -9,20 +9,19 @@ An exxample of each task is as follows.
 
 ### Laptop close
 
-![1 laptop_close](https://user-images.githubusercontent.com/50347012/144413817-d1bcbcee-bf74-4bc7-a689-1564ba53d438.png)
+![re_re_1 laptop_close](https://user-images.githubusercontent.com/50347012/144414866-bd8d0cd3-f95f-4561-9e0b-3f6287b70c99.png)
+
 
 
 ### Drawer close
-
-figure
-
+![re_re_2 drawer_close](https://user-images.githubusercontent.com/50347012/144414873-7cc1c6b5-47e3-4b01-8525-3cb6fb69232d.png)
 
 ## Structure
 In this case, the algorithm uses RGB, depth, and segmentation images in the virtual environment.
 
 The structure of Asymmetric SAC+VAE is as follows.
 
-figure
+![re_re_3 Asymmetric_SAC_VAE_structure](https://user-images.githubusercontent.com/50347012/144414879-6f69eeea-c7d9-4766-8dcd-141031c1de44.png)
 
 학습은 다음과 같은 코드를 통해 진행된다.
 ```p
