@@ -23,7 +23,7 @@ The structure of Asymmetric SAC+VAE is as follows.
 
 ![re_re_3 Asymmetric_SAC_VAE_structure](https://user-images.githubusercontent.com/50347012/144414879-6f69eeea-c7d9-4766-8dcd-141031c1de44.png)
 
-학습은 다음과 같은 코드를 통해 진행된다.
+Learning proceeds through the following code.
 ```p
   python main.py --GUI GUI --cuda 
 ```
