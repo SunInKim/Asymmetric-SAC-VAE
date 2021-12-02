@@ -5,7 +5,7 @@ The unit tasks for tidying the desk are closing the drawer and closing the lapto
 
 A random number of objects are placed on the desk so that it can be operated in a variety of environments.
 
-An exxample of each task is as follows.
+An example of each task is as follows.
 
 ### Laptop close
 
