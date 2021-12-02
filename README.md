@@ -9,7 +9,8 @@ An exxample of each task is as follows.
 
 ### Laptop close
 
-figure
+![1 laptop_close](https://user-images.githubusercontent.com/50347012/144413817-d1bcbcee-bf74-4bc7-a689-1564ba53d438.png)
+
 
 ### Drawer close
 
